@@ -16,7 +16,7 @@ This project aims to predict the **creditworthiness** of individuals based on va
 ├── german.data # Raw dataset (categorical + numeric)  
 ├── german.data-numeric # Cleaned, fully numeric version of the dataset  
 ├── german.doc # Attribute definitions and metadata  
-├── credit_rf_notebook.ipynb # Full Jupyter Notebook with EDA, modeling, and evaluation  
+├── file.ipynb # Full Jupyter Notebook with EDA, modeling, and evaluation  
 └── requirements.txt # Dependencies  
 
 ---
@@ -95,8 +95,8 @@ Financial institutions need to assess an individual's **credit risk** before app
 
 | Metric                  | Value      |
 |-------------------------|------------|
-| Accuracy                | ~72%       |
-| ROC AUC (Good=1)        | ~0.75      |
+| Accuracy                | 77%      |
+| ROC AUC (Good=1)        | 0.208     |
 | Total Cost (Custom Matrix)| Calculated and minimized |
 | Top Features            | Duration, Credit Amount, Age, Employment |
 
@@ -122,7 +122,7 @@ This matrix penalizes **false positives (bad predicted as good)** 5× more.
 pip install -r requirements.txt
 ```
 ## Launch Notebook
-jupyter notebook credit_risk.ipynb
+jupyter notebook file.ipynb
 
 ## Insights
 
